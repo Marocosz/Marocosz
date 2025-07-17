@@ -1,6 +1,6 @@
-<!-- Banner ou logotipo -->
+<!-- Banner/Logo -->
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/85518327/274927066-053cc14f-126d-424e-92d4-13cd78a712ba.png" alt="Logo Marcos" height="160px">
+  <img src="https://user-images.githubusercontent.com/85518327/274927066-053cc14f-126d-424e-92d4-13cd78a712ba.png" alt="Logo Marcos Rodrigues" height="160px">
 </p>
 
 <!-- Texto animado -->
@@ -10,20 +10,20 @@
   </a>
 </p>
 
-<!-- GitHub Stats -->
+<!-- GitHub Stats e Linguagens -->
 <div align="center">  
   <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=marocosz&show_icons=true&count_private=true&hide_border=true&title_color=6c6cfeff&icon_color=6c6cfeff&text_color=bcbcf0ff&bg_color=0d1117" alt="Marcos Rodrigues GitHub Stats" /> 
-  <img width="41%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=marocosz&layout=compact&hide_border=true&title_color=6c6cfeff&text_color=bcbcf0ff&bg_color=0d1117" alt="Top Languages" />
+  <img width="41%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=marocosz&layout=compact&hide_border=true&title_color=6c6cfeff&text_color=bcbcf0ff&bg_color=0d1117" alt="Top Languages Used" />
 </div>
 
 <!-- Gráfico de atividade -->
 <p align="center">
   <a href="https://github.com/ashutosh00710/github-readme-activity-graph">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=marocosz&bg_color=0d1117&color=6c6cfe&line=b2b2ce&point=6c6cfe&area=true&hide_border=true" alt="Activity Graph" />
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=marocosz&bg_color=0d1117&color=6c6cfe&line=b2b2ce&point=6c6cfe&area=true&hide_border=true" alt="Marcos Rodrigues Activity Graph" />
   </a>
 </p>
 
-<!-- Redes sociais -->
+<!-- Contatos / Social -->
 <div align="center">
   <a href="https://www.instagram.com/marcossemj/" target="_blank">
     <img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
@@ -36,5 +36,5 @@
   </a>   
 </div>
 
-<!-- Footer decorativo -->
+<!-- Rodapé decorativo -->
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=582faeff&height=120&section=footer"/>
