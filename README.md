@@ -9,13 +9,11 @@
 
 [![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=marocosz&bg_color=0d1117&color=6c6cfe&line=b2b2ce&point=6c6cfe&area=true&hide_border=true&hide_legend=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="dist/pacman-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="dist/pacman-light.svg" />
-    <img alt="Pac-Man contribution graph" src="dist/pacman-light.svg" />
-  </picture>
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/marocosz/marocosz/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/marocosz/marocosz/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/marocosz/marocosz/output/pacman-contribution-graph.svg">
+</picture>
 
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo" />
