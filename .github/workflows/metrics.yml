@@ -6,8 +6,9 @@
 # gratuitas de terceiros. O perfil ficou mostrando alt text por semanas sem nenhuma
 # mudanca deste repositorio.
 #
-# Aqui o SVG e gerado no CI e commitado na branch `output` — a mesma que o
-# pacman.yml ja usa. O README passa a ler um arquivo estatico do proprio repo,
+# Aqui o SVG e gerado no CI e commitado na branch `metrics`, que existe so para
+# isso: a `output` do pacman.yml e publicada com deploy limpo e apaga tudo que
+# nao veio do `dist/` dele. O README passa a ler um arquivo estatico do repo,
 # entao a unica forma de ele quebrar de novo e o GitHub sair do ar.
 #
 # TOKEN: roda com o GITHUB_TOKEN da propria Action, sem nenhum segredo configurado.
@@ -17,8 +18,8 @@
 name: Generate metrics
 
 on:
-  schedule: # a cada 12 horas, deslocado do pacman.yml de proposito:
-    - cron: "30 */12 * * *" # os dois escrevem na branch `output`
+  schedule: # a cada 12 horas
+    - cron: "30 */12 * * *"
 
   workflow_dispatch:
 
@@ -35,7 +36,7 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
-          committer_branch: output
+          committer_branch: metrics
           committer_message: "chore: atualiza metrics.svg"
           filename: metrics.svg
           user: Marocosz
@@ -52,7 +53,7 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
-          committer_branch: output
+          committer_branch: metrics
           committer_message: "chore: atualiza metrics.languages.svg"
           filename: metrics.languages.svg
           user: Marocosz

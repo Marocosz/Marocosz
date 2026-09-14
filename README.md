@@ -6,8 +6,8 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=6c6cfeff&size=35&center=true&vCenter=true&width=1000&lines=HELLO,+My+name+is+Marcos+Rodrigues;I'm+22+years+old;I'm+from+Brazil;I'm+graduated+Information+Management;Be+Welcome!+:%29)](https://git.io/typing-svg)
 
 <div align="center">
-  <img width="49%" src="https://raw.githubusercontent.com/marocosz/marocosz/output/metrics.svg" alt="Estatisticas do GitHub de Marcos Rodrigues" />
-  <img width="44%" src="https://raw.githubusercontent.com/marocosz/marocosz/output/metrics.languages.svg" alt="Linguagens mais usadas por Marcos Rodrigues" />
+  <img width="49%" src="https://raw.githubusercontent.com/marocosz/marocosz/metrics/metrics.svg" alt="Estatisticas do GitHub de Marcos Rodrigues" />
+  <img width="44%" src="https://raw.githubusercontent.com/marocosz/marocosz/metrics/metrics.languages.svg" alt="Linguagens mais usadas por Marcos Rodrigues" />
 </div>
 
 <picture>

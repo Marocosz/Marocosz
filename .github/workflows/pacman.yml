@@ -29,10 +29,9 @@ jobs:
         with:
           target_branch: output
           build_dir: dist
-          # Sem isto o deploy SUBSTITUI a branch inteira, e foi exatamente o que
-          # aconteceu em 2026-09-14: este workflow rodou depois do metrics.yml e
-          # apagou metrics.svg e metrics.languages.svg da `output`. O README ficou
-          # com dois 404. `keep_files` faz o deploy so acrescentar o que ele gera.
-          keep_files: true
+          # ATENCAO: este deploy SUBSTITUI o conteudo inteiro da `output`. Nao
+          # ponha nada mais aqui esperando que sobreviva — em 2026-09-14 ele
+          # apagou os SVGs do metrics.yml duas vezes. Esta action nao tem
+          # `keep_files`, entao a saida do metrics mora na branch `metrics`.
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
