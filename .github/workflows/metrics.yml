@@ -1,0 +1,72 @@
+# Gera os cards de estatistica COMO ARQUIVO, e nao como requisicao.
+#
+# O motivo esta no historico: o README apontava para github-readme-stats.vercel.app
+# e para github-readme-activity-graph.vercel.app, e os dois sairam do ar ao mesmo
+# tempo (503 DEPLOYMENT_PAUSED e 402 DEPLOYMENT_DISABLED) porque sao contas Vercel
+# gratuitas de terceiros. O perfil ficou mostrando alt text por semanas sem nenhuma
+# mudanca deste repositorio.
+#
+# Aqui o SVG e gerado no CI e commitado na branch `output` — a mesma que o
+# pacman.yml ja usa. O README passa a ler um arquivo estatico do proprio repo,
+# entao a unica forma de ele quebrar de novo e o GitHub sair do ar.
+#
+# TOKEN: roda com o GITHUB_TOKEN da propria Action, sem nenhum segredo configurado.
+# Se um dia voce criar um PAT classico (escopo `repo`) e salvar como METRICS_TOKEN,
+# a expressao abaixo passa a usa-lo sozinha e os repositorios privados entram na
+# contagem. Sem o segredo, a expressao cai no GITHUB_TOKEN e conta so o publico.
+name: Generate metrics
+
+on:
+  schedule: # a cada 12 horas, no minuto 0
+    - cron: "0 */12 * * *"
+
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: metrics.svg — o card de estatisticas
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_branch: output
+          committer_message: "chore: atualiza metrics.svg"
+          filename: metrics.svg
+          user: Marocosz
+          template: classic
+          base: header, repositories
+          config_timezone: America/Sao_Paulo
+          config_theme: dark
+          extras_css: |
+            h2 { color: #6c6cfe !important; }
+            .field .value { color: #bcbcf0 !important; }
+
+      - name: metrics.languages.svg — as linguagens
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_branch: output
+          committer_message: "chore: atualiza metrics.languages.svg"
+          filename: metrics.languages.svg
+          user: Marocosz
+          template: classic
+          base: ""
+          config_timezone: America/Sao_Paulo
+          config_theme: dark
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_threshold: 1%
+          extras_css: |
+            h2 { color: #6c6cfe !important; }
