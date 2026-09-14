@@ -46,10 +46,10 @@ jobs:
           template: classic
           base: header, repositories
           config_timezone: America/Sao_Paulo
-          config_theme: dark
           extras_css: |
-            h2 { color: #6c6cfe !important; }
-            .field .value { color: #bcbcf0 !important; }
+            :root { background: #0d1117; }
+            svg { color: #bcbcf0; }
+            h2, h3 { color: #6c6cfe !important; }
 
       - name: metrics.languages.svg — as linguagens
         uses: lowlighter/metrics@latest
@@ -63,10 +63,11 @@ jobs:
           template: classic
           base: ""
           config_timezone: America/Sao_Paulo
-          config_theme: dark
           plugin_languages: yes
           plugin_languages_limit: 8
           plugin_languages_details: bytes-size, percentage
           plugin_languages_threshold: 1%
           extras_css: |
-            h2 { color: #6c6cfe !important; }
+            :root { background: #0d1117; }
+            svg { color: #bcbcf0; }
+            h2, h3 { color: #6c6cfe !important; }
