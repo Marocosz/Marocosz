@@ -2,7 +2,7 @@ name: Generate pacman animation
 
 on:
   schedule: # execute every 12 hours
-    - cron: "* */12 * * *"
+    - cron: "0 */12 * * *"
 
   workflow_dispatch:
 
@@ -29,5 +29,10 @@ jobs:
         with:
           target_branch: output
           build_dir: dist
+          # Sem isto o deploy SUBSTITUI a branch inteira, e foi exatamente o que
+          # aconteceu em 2026-09-14: este workflow rodou depois do metrics.yml e
+          # apagou metrics.svg e metrics.languages.svg da `output`. O README ficou
+          # com dois 404. `keep_files` faz o deploy so acrescentar o que ele gera.
+          keep_files: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

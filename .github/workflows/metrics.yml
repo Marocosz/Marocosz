@@ -17,14 +17,10 @@
 name: Generate metrics
 
 on:
-  schedule: # a cada 12 horas, no minuto 0
-    - cron: "0 */12 * * *"
+  schedule: # a cada 12 horas, deslocado do pacman.yml de proposito:
+    - cron: "30 */12 * * *" # os dois escrevem na branch `output`
 
   workflow_dispatch:
-
-  push:
-    branches:
-      - main
 
 jobs:
   generate:
