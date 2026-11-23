@@ -32,20 +32,20 @@ h2, h3 { color: #6c6cfe !important; }</style>
                         <div class="field calendar">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 11" width="210" height="16">
                                 <g>
-                                    <rect class="day" x="0" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
-                                    <rect class="day" x="15" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
-                                    <rect class="day" x="30" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
-                                    <rect class="day" x="45" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
-                                    <rect class="day" x="60" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
+                                    <rect class="day" x="0" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
+                                    <rect class="day" x="15" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
+                                    <rect class="day" x="30" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
+                                    <rect class="day" x="45" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
+                                    <rect class="day" x="60" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
                                     <rect class="day" x="75" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
-                                    <rect class="day" x="90" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
-                                    <rect class="day" x="105" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
-                                    <rect class="day" x="120" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="90" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
+                                    <rect class="day" x="105" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="120" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                     <rect class="day" x="135" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
-                                    <rect class="day" x="150" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
-                                    <rect class="day" x="165" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
-                                    <rect class="day" x="180" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
-                                    <rect class="day" x="195" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="150" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="165" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
+                                    <rect class="day" x="180" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="195" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                 </g>
                             </svg>
                         </div>
@@ -139,12 +139,12 @@ h2, h3 { color: #6c6cfe !important; }</style>
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="195.33063107399857" height="8" fill="#3572A5"/>
-                    <rect mask="url(#languages-bar)" x="195.33063107399857" y="0" width="170.91606706389797" height="8" fill="#DA5B0B"/>
-                    <rect mask="url(#languages-bar)" x="366.24669813789654" y="0" width="62.283671799009674" height="8" fill="#e34c26"/>
-                    <rect mask="url(#languages-bar)" x="428.5303699369062" y="0" width="13.234524433412394" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="441.7648943703186" y="0" width="10.849888167876301" height="8" fill="#3178c6"/>
-                    <rect mask="url(#languages-bar)" x="452.6147825381949" y="0" width="7.385217461805103" height="8" fill="#663399"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="195.28347151189936" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="195.28347151189936" y="0" width="170.8748020209596" height="8" fill="#DA5B0B"/>
+                    <rect mask="url(#languages-bar)" x="366.15827353285897" y="0" width="62.26883993579124" height="8" fill="#e34c26"/>
+                    <rect mask="url(#languages-bar)" x="428.42711346865025" y="0" width="13.291457440152222" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="441.71857090880246" y="0" width="10.874956515234791" height="8" fill="#3178c6"/>
+                    <rect mask="url(#languages-bar)" x="452.5935274240373" y="0" width="7.406472575962745" height="8" fill="#663399"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -156,7 +156,7 @@ h2, h3 { color: #6c6cfe !important; }</style>
                                 Python
                             </div>
                             <small>
-                                <div>42.46%</div>
+                                <div>42.45%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -191,7 +191,7 @@ h2, h3 { color: #6c6cfe !important; }</style>
                                 Jupyter Notebook
                             </div>
                             <small>
-                                <div>37.16%</div>
+                                <div>37.15%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -202,7 +202,7 @@ h2, h3 { color: #6c6cfe !important; }</style>
                                 JavaScript
                             </div>
                             <small>
-                                <div>2.88%</div>
+                                <div>2.89%</div>
                             </small>
                         </div>
                         <div class="field language details">
